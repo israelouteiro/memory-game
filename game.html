@@ -1,19 +1,21 @@
 <html>
 <head>
-	<title>Memory Game by viniciusmo</title>
+	<title>Jogo da memoria</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<script type="text/javascript" src="game.js"></script>
   	<link  rel="stylesheet" href="game.css">
 </head>
 <body onload="GameControl.createGame()">
 	<div  id="main" class="main">
-
-	<div id="control">
-		<input type="button"  class="button_game" value="Reiniciar" onclick="GameControl.createGame()"/> 
+		<h1>
+			Jogo da memoria 
+			<div id="score"></div>
+		</h1>
+		<div id="control">
+			<input type="button"  class="button_game" value="Reiniciar" onclick="GameControl.createGame()"/> 
+		</div>
+		
+		<div id="game"></div>
 	</div>
-	<div id="score">
-	</div>
-	<div id="game">
-	</div>
-</div>
 </body>
 </html>
